@@ -13,10 +13,16 @@ function App() {
 
   console.log(result)
 
-
+  if (result.isPending){
+    return <h1>Loding</h1>
+  }
   return (
     <>
-    
+      <ul>
+        {
+          result.data?.mape(e => <li )
+        }
+      </ul>
     </>
   )
 }
