@@ -3,13 +3,15 @@ import { useQuery } from '@tanstack/react-query'
 import './App.css'
 
 function App() {
-  useQuery({
+  const result = useQuery({
     queryKey : ["Posts"] ,
     queryFn : async function () {
       const data = await fetch("https://jsonplaceholder.typicode.com/todos/1") 
       return data.json()
     }
   })
+
+  console.log(result)
 
 
   return (
