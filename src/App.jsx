@@ -20,7 +20,7 @@ function App() {
     <>
       <ul>
         {
-          result.data?.mape(e => <li )
+          result.data?.mape(e => <li key={e.id}>{e.name}</li> )
         }
       </ul>
     </>
