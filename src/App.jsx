@@ -5,7 +5,9 @@ import './App.css'
 function App() {
   useQuery({
     queryKey : ["Posts"] ,
-    queryFn 
+    queryFn : async function () {
+      const data = await fetch()
+    }
   })
 
 
