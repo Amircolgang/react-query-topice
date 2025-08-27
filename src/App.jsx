@@ -4,7 +4,8 @@ import './App.css'
 
 function App() {
   useQuery({
-    
+    queryKey : ["Posts"] ,
+    queryFn 
   })
 
 
